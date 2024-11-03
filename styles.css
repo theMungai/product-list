@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+
+:root{
+    --red: hsl(14, 86%, 42%);
+    --green: hsl(159, 69%, 38%);
+    --rose-50: hsl(20, 50%, 98%);
+    --rose-100: hsl(13, 31%, 94%);
+    --rose-300: hsl(14, 25%, 72%);
+    --rose-400: hsl(7, 20%, 60%);
+    --rose-500: hsl(12, 20%, 44%);
+    --rose-900: hsl(14, 65%, 9%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Red Hat Text";
+}
+
+body{}
+
+.main-container{
+    display: flex;
+}
+
+
+.add-to-cart-button{
+    border: 0.4px solid var(--red);
+    border-radius: 20px;
+    padding: 5px 15px;
+    display: flex;
+    cursor: pointer;
+}
+
+.add-to-cart-button img{
+    padding-right: 6px;
+}
+
+.add-to-cart-button:hover{
+    color: var(--red);
+    border-color: var(--red);
+}
+
+
+/* ----------- JavaScript button starts here -------------- */
+
+.add-cart-button-after-click{
+    display: flex;
+    align-items: center;
+    border: 0.4px solid var(--red);
+    border-radius: 20px;
+    padding: 5px 15px;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+.add-cart-button-after-click .fa-circle-minus{
+    padding-right: 25px;
+}
+
+.add-cart-button-after-click .fa-circle-plus{
+    padding-left: 25px;
+}
+
+/* ----- JavaScript button ends here --------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+    
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
