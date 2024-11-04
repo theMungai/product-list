@@ -15,15 +15,109 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
+}
+
+body{
+    width: 100%;
+    height: 100vh;
     font-family: "Red Hat Text";
 }
 
-body{}
-
 .main-container{
     display: flex;
+    width: 90%;
+    height: auto;
+    margin: 40px auto;
+    padding: 20px 0px
 }
 
+.desserts-body{
+    display:grid ;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+}
+
+.waffle-image{
+    width: 100%;
+    height: 200px;
+    background: url(/images/image-waffle-desktop.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.vanilla-bean-image{
+    background: url(/images/image-creme-brulee-desktop.jpg);
+    width: 100%;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.macaron-image{
+    background: url(/images/image-macaron-desktop.jpg);
+    width: 100%;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.tiramisu-image{
+    background: url(/images/image-tiramisu-desktop.jpg);
+    width: 100%;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.baklava-image{
+    background: url(/images/image-baklava-desktop.jpg);
+    width: 100%;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.pie-image{
+    background: url(/images/image-meringue-desktop.jpg);
+    width: 100%;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.cake-image{
+    background: url(/images/image-cake-desktop.jpg);
+    width: 100%;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.brownie-image{
+    background: url(/images/image-brownie-desktop.jpg);
+    width: 100%;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.panna-cotta-image{
+    background: url(/images/image-panna-cotta-desktop.jpg);
+    width: 100%;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
 
 .add-to-cart-button{
     border: 0.4px solid var(--red);
