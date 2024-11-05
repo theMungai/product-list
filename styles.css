@@ -143,58 +143,6 @@ body{
 }
 /* -------- Cart ends here ----------------- */
 
-/*--------- Remove from cart Starts here --------------- */
-
-.remove-section{
-    display: none;
-    width: 100%;
-    padding: 20px;
-    background-color: var(--green);
-    color: var(--rose-50);
-    position: absolute;
-    top: 0;
-    transition: 1s;
-}
-
-.remove-item-container{
-    width: 30%;
-    padding: 30px 0px;
-    display: flex;
-    justify-content: space-around;
-    margin: 0px auto;
-    font-weight: 500;
-    font-size: 1.2rem;
-}
-
-
-@keyframes animation {
-    from {
-        top: -20px; 
-        opacity: 1;
-    }
-
-    to {
-        top: 0px;
-        opacity: 1;
-    }
-
-    to {
-        top: 20px;
-        opacity: 0;
-        display: none;
-    }
-  }
-  
-  .remove-section{
-      animation-name: animation;
-      animation-duration: 3000ms;
-     
-  }
-
-
-
-/*------------- Remove from cart ends here ------------ */
-
 .waffle-image{
     width: 100%;
     height: 200px;
@@ -280,12 +228,14 @@ body{
 .add-to-cart-button{
     border: 0.4px solid var(--red);
     border-radius: 20px;
-    padding: 5px 15px;
+    padding:  5px;
+    width: 80%;
     display: flex;
+    justify-content: center;
     cursor: pointer;
     position: relative;
     top: 0%;
-    left: 35%;
+    left: 40%;
     transform: translate(-50%, -50%);
     margin: 0px auto;
 }
@@ -426,24 +376,560 @@ body{
 /* ----- JavaScript button ends here --------------------- */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 .attribution { 
-    font-size: 11px; 
+    font-size: 12px; 
     text-align: center; 
 }
     
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+
+/* -----------Media Queries -------------------- */
+/* -----------Mobile Device -------------------- */
+
+@media (max-width:480px){
+    
+    .main-container{
+        display: block;
+        width: 100%;
+        margin: 0px auto;
+        padding: 20px;
+        position: relative;
+    }
+    
+    .desserts-body{
+        display:grid ;
+        grid-template-columns: 1fr;
+
+    }
+    
+    /* ---------------- Cart starts here-------- */
+    .your-cart{
+        width: 100%;
+        margin:30px 0px;
+    }
+
+    /* -------- Cart ends here ----------------- */
+    
+    .waffle-image{
+        width: 100%;
+        height: 200px;
+        background: url(/images/image-waffle-mobile.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .vanilla-bean-image{
+        background: url(/images/image-creme-brulee-mobile.jpg);
+        width: 100%;
+        height: 200px;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .macaron-image{
+        background: url(/images/image-macaron-mobile.jpg);
+        width: 100%;
+        height: 200px;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .tiramisu-image{
+        background: url(/images/image-tiramisu-mobile.jpg);
+        width: 100%;
+        height: 200px;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .baklava-image{
+        background: url(/images/image-baklava-mobile.jpg);
+        width: 100%;
+        height: 200px;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .pie-image{
+        background: url(/images/image-meringue-mobile.jpg);
+        width: 100%;
+        height: 200px;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .cake-image{
+        background: url(/images/image-cake-mobile.jpg);
+        width: 100%;
+        height: 200px;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .brownie-image{
+        background: url(/images/image-brownie-mobile.jpg);
+        width: 100%;
+        height: 200px;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .panna-cotta-image{
+        background: url(/images/image-panna-cotta-mobile.jpg);
+        width: 100%;
+        height: 200px;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    
+    .add-to-cart-button{
+        padding: 10px 35px;
+        top: 0%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+
+    }
+
+    /* ----------popup modal starts here ------ */
+    .pop-up-modal{
+        position: absolute;
+        left: 0%;
+        right: 0%;
+        background-color: rgba(7, 7, 7, 0.4);
+        display: none;
+        
+    }
+    
+    .your-cart-pop-up{
+        width: 100%;
+        height: 100vh;
+        border-radius: 0px;
+    }
+    
+    /* ---------- popup modal ends here -------- */
+    
+    
+    /* ----------- JavaScript button starts here -------------- */
+    
+    .add-cart-button-after-click{
+        padding: 10px 35px;
+
+    }
+
+    /* ----------- JavaScript button ends here -------------- */
+}
+
+
+/* -----------Small Tablets -------------------- */
+
+@media (min-width:481px) and (max-width:767px){
+    
+    .main-container{
+        display: block;
+        width: 100%;
+        margin: 0px auto;
+        padding: 20px;
+        position: relative;
+    }
+    
+    .desserts-body{
+        display:grid ;
+        grid-template-columns: 1fr;
+
+    }
+    
+    /* ---------------- Cart starts here-------- */
+    .your-cart{
+        width: 100%;
+        margin:30px 0px;
+    }
+
+    /* -------- Cart ends here ----------------- */
+    
+    .waffle-image{
+        width: 100%;
+        height: 200px;
+        background: url(/images/image-waffle-mobile.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .vanilla-bean-image{
+        background: url(/images/image-creme-brulee-mobile.jpg);
+        width: 100%;
+        height: 200px;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .macaron-image{
+        background: url(/images/image-macaron-mobile.jpg);
+        width: 100%;
+        height: 200px;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .tiramisu-image{
+        background: url(/images/image-tiramisu-mobile.jpg);
+        width: 100%;
+        height: 200px;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .baklava-image{
+        background: url(/images/image-baklava-mobile.jpg);
+        width: 100%;
+        height: 200px;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .pie-image{
+        background: url(/images/image-meringue-mobile.jpg);
+        width: 100%;
+        height: 200px;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .cake-image{
+        background: url(/images/image-cake-mobile.jpg);
+        width: 100%;
+        height: 200px;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .brownie-image{
+        background: url(/images/image-brownie-mobile.jpg);
+        width: 100%;
+        height: 200px;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .panna-cotta-image{
+        background: url(/images/image-panna-cotta-mobile.jpg);
+        width: 100%;
+        height: 200px;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    
+    .add-to-cart-button{
+        width: 50%;
+        top: 0%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+
+    }
+
+    /* ----------popup modal starts here ------ */
+    .pop-up-modal{
+        position: absolute;
+        left: 0%;
+        right: 0%;
+        background-color: rgba(7, 7, 7, 0.4);
+        display: none;
+        
+    }
+    
+    .your-cart-pop-up{
+        width: 100%;
+        height: 100vh;
+        border-radius: 0px;
+    }
+    
+    /* ---------- popup modal ends here -------- */
+    
+    
+    /* ----------- JavaScript button starts here -------------- */
+    
+    .add-cart-button-after-click{
+        padding: 10px 35px;
+
+    }
+
+    /* ----------- JavaScript button ends here -------------- */
+}
+
+/* ----------- Tablets -------------------- */
+
+@media (min-width:768px) and (max-width:991px){
+    
+    .main-container{
+        display: block;
+        width: 100%;
+        margin: 0px auto;
+        padding: 20px;
+        position: relative;
+    }
+    
+    .desserts-body{
+        display:grid ;
+        grid-template-columns: repeat(2,1fr);
+
+    }
+    
+    /* ---------------- Cart starts here-------- */
+    .your-cart{
+        width: 100%;
+        margin:30px 0px;
+    }
+
+    /* -------- Cart ends here ----------------- */
+    
+    .waffle-image{
+        width: 100%;
+        height: 200px;
+        background: url(/images/image-waffle-mobile.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .vanilla-bean-image{
+        background: url(/images/image-creme-brulee-mobile.jpg);
+        width: 100%;
+        height: 200px;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .macaron-image{
+        background: url(/images/image-macaron-mobile.jpg);
+        width: 100%;
+        height: 200px;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .tiramisu-image{
+        background: url(/images/image-tiramisu-mobile.jpg);
+        width: 100%;
+        height: 200px;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .baklava-image{
+        background: url(/images/image-baklava-mobile.jpg);
+        width: 100%;
+        height: 200px;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .pie-image{
+        background: url(/images/image-meringue-mobile.jpg);
+        width: 100%;
+        height: 200px;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .cake-image{
+        background: url(/images/image-cake-mobile.jpg);
+        width: 100%;
+        height: 200px;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .brownie-image{
+        background: url(/images/image-brownie-mobile.jpg);
+        width: 100%;
+        height: 200px;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .panna-cotta-image{
+        background: url(/images/image-panna-cotta-mobile.jpg);
+        width: 100%;
+        height: 200px;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    
+    .add-to-cart-button{
+        width: 50%;
+        top: 0%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+
+    }
+
+    /* ----------popup modal starts here ------ */
+    .pop-up-modal{
+        position: absolute;
+        left: 0%;
+        right: 0%;
+        background-color: rgba(7, 7, 7, 0.4);
+        display: none;
+        
+    }
+    
+    .your-cart-pop-up{
+        width: 100%;
+        height: 100vh;
+        border-radius: 0px;
+    }
+    
+    /* ---------- popup modal ends here -------- */
+    
+    
+    /* ----------- JavaScript button starts here -------------- */
+    
+    .add-cart-button-after-click{
+        padding: 10px 35px;
+
+    }
+
+    /* ----------- JavaScript button ends here -------------- */
+}
+
+
+
+/* ----------- Tablets -------------------- */
+
+@media (min-width:992px) and (max-width:1199px){
+    
+    .main-container{
+        display: block;
+        width: 100%;
+        margin: 0px auto;
+        padding: 20px;
+        position: relative;
+    }
+    
+    .desserts-body{
+        display:grid ;
+        grid-template-columns: repeat(2,1fr);
+
+    }
+    
+    /* ---------------- Cart starts here-------- */
+    .your-cart{
+        width: 100%;
+        margin:30px 0px;
+    }
+
+    /* -------- Cart ends here ----------------- */
+    
+    .waffle-image{
+        width: 100%;
+        height: 200px;
+        background: url(/images/image-waffle-mobile.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .vanilla-bean-image{
+        background: url(/images/image-creme-brulee-mobile.jpg);
+        width: 100%;
+        height: 200px;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .macaron-image{
+        background: url(/images/image-macaron-mobile.jpg);
+        width: 100%;
+        height: 200px;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .tiramisu-image{
+        background: url(/images/image-tiramisu-mobile.jpg);
+        width: 100%;
+        height: 200px;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .baklava-image{
+        background: url(/images/image-baklava-mobile.jpg);
+        width: 100%;
+        height: 200px;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .pie-image{
+        background: url(/images/image-meringue-mobile.jpg);
+        width: 100%;
+        height: 200px;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .cake-image{
+        background: url(/images/image-cake-mobile.jpg);
+        width: 100%;
+        height: 200px;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .brownie-image{
+        background: url(/images/image-brownie-mobile.jpg);
+        width: 100%;
+        height: 200px;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .panna-cotta-image{
+        background: url(/images/image-panna-cotta-mobile.jpg);
+        width: 100%;
+        height: 200px;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    
+    .add-to-cart-button{
+        width: 50%;
+        top: 0%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+
+    }
+
+    /* ----------popup modal starts here ------ */
+    .pop-up-modal{
+        position: absolute;
+        left: 0%;
+        right: 0%;
+        background-color: rgba(7, 7, 7, 0.4);
+        display: none;
+        
+    }
+    
+    .your-cart-pop-up{
+        width: 100%;
+        height: 100vh;
+        border-radius: 0px;
+    }
+    
+    /* ---------- popup modal ends here -------- */
+    
+    
+    /* ----------- JavaScript button starts here -------------- */
+    
+    .add-cart-button-after-click{
+        padding: 10px 35px;
+
+    }
+
+    /* ----------- JavaScript button ends here -------------- */
 }

@@ -23,10 +23,11 @@ const body = document.querySelector("body")
 
 removeItemButton.addEventListener('click', () => {
    unorderList.removeChild(listItems);
-   removeItemButton.style.display = "none"
+   // removeItemButton.style.display = "none"
    removeNotification.style.display = "block"
 })
 
+listItems.appendChild(removeItemButton)
 
 
 
@@ -138,6 +139,61 @@ vanillaBeanButton.addEventListener('click', () => {
        
     })
 })
+
+
+
+// accessing macaron button
+let macaronCount = 0
+macaronButton.addEventListener('click', () => {
+    
+   macaronButton.innerHTML = `<i class="fa-solid fa-circle-minus"></i> <p>${macaronCount}</p> <i class="fa-solid fa-circle-plus"></i>`;
+   macaronButton.style.backgroundColor = "hsl(14, 86%, 42%)";
+   macaronButton.style.color = "white";
+   macaronButton.classList.add('add-cart-button-after-click');
+
+    const macaronQuantity = macaronButton.querySelector("p");
+    
+
+    // increasing product when plus icon is clicked
+    const plusMacaron = macaronButton.querySelector(".fa-circle-plus");
+    const fullProductMacaron = document.querySelector("#full-product");
+    const calculationOrderedList = document.querySelector(".calculation-unordered-list");
+    const macaronItemNumber = document.querySelector(".number-of-items");
+    let macaronTotalPrice = document.querySelector("#unordered-price-total");
+    const macaronPrice = document.querySelector("#unordered-price");
+
+  //   calculating for the cart
+    macaronItemNumber.innerHTML = `${macaronCount}x`     
+    macaronPrice.innerHTML = `$@${(8.00).toFixed(2)}`    
+    macaronTotalPrice.innerHTML = `${(8.00 * macaronCount).toFixed(2)}`
+
+    fullProductMacaron.innerHTML = `Macaron Mix of Five`
+    listItems.append(macaronItemNumber, macaronPrice,macaronTotalPrice,fullProductMacaron);
+    unorderList.appendChild(listItems)
+    plusMacaron.addEventListener('click', () => {
+       macaronCount = macaronCount + 1;
+       macaronQuantity.textContent = macaronCount
+
+       
+       emptyCart.style.display = 'none';
+       cartWithItems.style.display = "block"
+       
+       cartQuantity.innerHTML = `${macaronCount}`
+    })
+    
+
+    // decreasing product when minus icon is clicked
+    const minusMacaron = macaronButton.querySelector(".fa-circle-minus");
+    minusMacaron.addEventListener('click', () => {
+       
+       if(macaronCount > 0){
+         macaronCount = macaronCount - 1;
+       }
+       
+    })
+})
+
+
 // Popup modal 
 const popup = document.querySelector(".pop-up-modal");
 const confirmButton = document.querySelector(".confirm-order");
@@ -146,13 +202,8 @@ const cancelOrderButton = document.querySelector("#cancel-order")
 
 // Showing Popup Modal
 confirmButton.addEventListener('click', () => {
-   if (listItems === 0){
-      popup.style.display = "block"
-   }
-
-   else{
-      alert("Kindly Make Your Order")
-   }
+   popup.style.display = "block"
+ 
 });
 
 // Hiding Popup Modal
@@ -166,10 +217,6 @@ startNewOrderButton.addEventListener('click', () => {
 
 
 
-
-
-
-listItems.focus()
 
 
 
