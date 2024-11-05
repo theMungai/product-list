@@ -24,7 +24,7 @@
       <div class="desserts-body">
         <div class="product" id="waffle">
           <div class="waffle-image">
-            
+
           </div>
 
           <button class="add-to-cart-button" id="waffle-button"><img src="/images/icon-add-to-cart.svg" alt=""> Add to Cart</button>
@@ -153,16 +153,91 @@
     <div class="your-cart">
       <h3 class="your-cart-heading">Your Cart (<span id="cart-quantity">0</span>)</h3>
       <div class="cart-body">
+
+        <!-- empty cart starts here -->
         <div class="empty-cart">
           <img src="/images/illustration-empty-cart.svg" alt="">
           <p>Your added items will appear here</p>
         </div>
+        <!-- empty cart ends here -->
+
+
+
+        <!-- cart with selected items starts here -->
+        
+        <div class="cart-with-items">
+          
+            <ul id="unordered-list">
+
+              <div class="unordered-products">
+                <p id="full-product"></p>
+                <div class="calculation-unordered-list">
+                  <span class="number-of-items"></span>
+                  <p id="unordered-price"></p>
+                  <p id="unordered-price-total"></p>
+                </div>
+                
+              </div>
+              <i class="fa-regular fa-circle-xmark" id="remove-item"></i>
+              
+            </ul>
+           
+          
+
+          <div class="total-section">
+            <p>Order Total</p>
+            <h1 class="grouped-total"></h1>
+          </div>
+
+          <div class="carbon-neutral">
+            <img src="/images/icon-carbon-neutral.svg" alt="">
+            <p>This is a <span>carbon-neutral</span> delivery</p>
+          </div>
+
+          <button class="confirm-order"> Confirm Order</button>
+        </div>
+         <!-- cart with selected items ends here -->
+
       </div>
     </div>
   </div>
 
 
-  
+  <!-- ----- Confirm Order Pop up modal starts here -->
+
+  <div class="pop-up-modal">
+    <div class="your-cart-pop-up">
+      <div class="pop-up-top">
+        <img src="/images/icon-order-confirmed.svg" alt="">
+        <button id="cancel-order">Cancel Order</button>
+      </div>
+      <h1>Order Confirmed</h1>
+      <p>We hope you enjoy your food</p>
+
+      <!-- list items start here -->
+       <!-- list items end here -->
+
+       
+       <div class="total-section">
+        <p>Order Total</p>
+        <h1 class="grouped-total"></h1>
+      </div>
+
+      <button class="start-new-order">Start New Order</button>
+    </div>
+  </div>
+
+  <!-- ----Confirm Order Pop up modal ends here -->
+
+<!-- Remove Item Popup Starts here -->
+
+<div class="remove-section">
+  <div class="remove-item-container">
+    <i class="fa-solid fa-check"></i>
+    <p>Product removed from the Cart successfully</p>
+  </div>
+</div>
+<!-- Remove Item Popup Starts here -->
   
 
   <div class="attribution">
