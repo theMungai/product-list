@@ -141,7 +141,6 @@ vanillaBeanButton.addEventListener('click', () => {
 })
 
 
-
 // accessing macaron button
 let macaronCount = 0
 macaronButton.addEventListener('click', () => {

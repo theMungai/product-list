@@ -15,6 +15,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    outline: 2px solid red;
     
 }
 
@@ -46,6 +47,7 @@ body{
 .your-cart{
     width: 30%;
     height: auto;
+    
 }
 
 .your-cart h3{
@@ -58,18 +60,24 @@ body{
 
 .cart-with-items{
     display:none;
+    
 }
 
-.cart-with-items ul{
+#unordered-list{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    list-style-type: none;
+}
+
+/* .cart-with-items ul{
     margin-top: 30px;
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
-    /* flex-direction: column-reverse; */
-    align-items: center;
     list-style-type: none;
-    /* border: 2px solid red; */
-}
+    
+} */
 
 .cart-with-items ul li {
     font-weight: 500;
